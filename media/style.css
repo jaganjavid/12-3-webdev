@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent div{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+}
+
+
+@media only screen and (min-width: 1100px) {
+    .parent div:first-child{
+        background-color: rgb(42, 58, 165);
+    }
+  }
+@media only screen and (min-width: 1200px) {
+    .parent div:nth-child(2){
+        background-color: rgb(27, 195, 153);
+    }
+  }
+@media only screen and (min-width: 1300px) {
+    .parent div:last-child{
+        background-color: rgb(94, 8, 140);
+    }
+  }
+
+
+@media only screen and (max-width: 1000px) {
+    .parent div:first-child{
+        background-color: rgb(42, 58, 165);
+    }
+  }
+@media only screen and (max-width: 800px) {
+    .parent div:nth-child(2){
+        background-color: rgb(27, 195, 153);
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .parent div:last-child{
+        background-color: rgb(94, 8, 140);
+    }
+  }
